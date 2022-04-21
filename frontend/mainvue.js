@@ -24,10 +24,7 @@ methods: {
             thisitem = item;
             })
         }  
-    changeDiv(item.name){
-    this.el = "#mainHTML",
-    this.data= {editToDoName: thisitem}  }
-    
+   
     }
     
 
