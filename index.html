@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ensolvers Implementation Exercise</title>
+    <link href="./frontend/styles.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    
+    
+    
+    <div id="maincont" class="contenedor" v-html="mainHtml">
+        
+        <div id="maindiv" >
+            <span>To Do List</span>
+            <ul>
+                <li v-for="item in items" v-bind:key="item.name">
+                    <input type="checkbox" name="checkbtn" value="" checked="checked" />
+                    {{item.name}}
+                    <a href="#" @click="editItem(item.name)">Edit</a>
+                </li>
+
+            </ul>
+
+        
+        <input type="text" name="NewTaskName" value="New Task" />
+        <input type="button" name="AddBtn" value="Add" />
+    </div>
+    <div id="app" v-html="editting"></div>  
+        
+       
+
+
+
+    </div>
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src = "./frontend/mainvue.js"></script> 
+</body>
+</html>
